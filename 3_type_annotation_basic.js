@@ -1,24 +1,16 @@
 //let myVariable: type = value;
 {
     //Strings
-    let movieTitle: string = 'Amadeus';
+    var movieTitle = 'Amadeus';
     movieTitle = 'Alien';
     // movieTitle = 9; //num not assignable to string
     // movieTitle.upper(); //this property doesn't exist
     movieTitle.toUpperCase();
-
     //Numbers
-    let luckyNum: number = 13;
+    var luckyNum = 13;
     // luckyNum = 'zero'; //string not assignable to num
-
     //boolean
-    let gameOver: boolean = false;
+    var gameOver = false;
     gameOver = true;
     // gameOver = 'true';
-
-    //the any type - we can do any thing
-    let thing: any = 'hello';
-    thing = 1;
-    thing = false;
-    thing();
 }
