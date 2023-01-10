@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /16_type_declarations/node_modules
+/18_webpack_and_typescript/node_modules
 /.pnp
 .pnp.js
 
