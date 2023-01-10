@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as getId } from 'uuid';
 import './App.css';
 
 import Greeter from './components/Greeter';
@@ -12,7 +13,7 @@ function App() {
 	const [items, setItems] = useState<Item[]>([]);
 	const addItem = (item: string) => {
 		console.log('WORK');
-		console.log(item);
+		setItems([...items, { id: getId(), product: item, qty: 1 }]);
 	};
 	// const items = [
 	// 	{ id: 1, product: 'Lemon', qty: 2 },
