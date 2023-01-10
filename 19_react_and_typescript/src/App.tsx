@@ -11,9 +11,9 @@ import Item from './models/item';
 
 function App() {
 	const [items, setItems] = useState<Item[]>([]);
-	const addItem = (item: string) => {
+	const addItem = (item: string, qty: number) => {
 		console.log('WORK');
-		setItems([...items, { id: getId(), product: item, qty: 1 }]);
+		setItems([...items, { id: getId(), product: item, qty: qty }]);
 	};
 	// const items = [
 	// 	{ id: 1, product: 'Lemon', qty: 2 },
