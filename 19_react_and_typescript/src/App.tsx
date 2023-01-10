@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div className="App">
 			<GreeterArrow />
-			<Greeter />
+			<Greeter person="Rafal" />
 		</div>
 	);
 }
