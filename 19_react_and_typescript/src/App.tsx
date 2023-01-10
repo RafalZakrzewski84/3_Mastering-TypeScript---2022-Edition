@@ -10,6 +10,10 @@ import Item from './models/item';
 
 function App() {
 	const [items, setItems] = useState<Item[]>([]);
+	const addItem = (item: string) => {
+		console.log('WORK');
+		console.log(item);
+	};
 	// const items = [
 	// 	{ id: 1, product: 'Lemon', qty: 2 },
 	// 	{ id: 2, product: 'Apple', qty: 10 },
@@ -19,7 +23,7 @@ function App() {
 			<GreeterArrow />
 			<Greeter person="Rafal" />
 			<ShoppingList items={items} />
-			<ShoppingListForm />
+			<ShoppingListForm onAddItem={addItem} />
 		</div>
 	);
 }
