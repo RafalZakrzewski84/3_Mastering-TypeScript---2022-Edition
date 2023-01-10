@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
 
+import Greeter from './components/Greeter';
+
 function App() {
 	return (
 		<div className="App">
-			<h1>Hello World</h1>
+			<Greeter />
+			<Greeter />
+			<Greeter />
 		</div>
 	);
 }
